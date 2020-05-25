@@ -39,3 +39,6 @@
 
 output/
 build/
+
+# Codeblocks specific
+*.layout
