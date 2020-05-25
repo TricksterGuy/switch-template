@@ -25,10 +25,10 @@ This is designed to be a simple and fairly minimal setup required to begin devel
 1. Simply open `switch-template.cbp` in Code::Blocks
 2. Choose File > Save as user-template and enter a template name.  The project setup is now a user template to create new projects.
 3. When creating a new project select File > New > From template and follow the wizard's instructions.
-4. Ensure you have the environment variables plugin installed (in linux you can install this by installing the codeblocks-contrib package). Alternatively if you already have set DEVKITPRO/DEVKITARM Environment variables you can skip this.
-  a. Choose Settings > Environment and scroll down to the Environment Variables section.
-    i. Add `DEVKITPRO` and point it to where devkitpro is installed
-    ii. Add `DEVKITARM` and point it to where devkitarm is.
+4. Ensure you have the environment variables plugin installed (in linux you can install this by installing the codeblocks-contrib package). Alternatively if you already have set DEVKITPRO/DEVKITARM Environment variables set you can skip this.
+    1. Choose Settings > Environment and scroll down to the Environment Variables section.
+        1. Add `DEVKITPRO` and point it to where devkitpro is installed
+        2. Add `DEVKITARM` and point it to where devkitarm is.
 
 To compile in Code::Blocks simply select your target from the list and click the Gear icon to automatically invoke the `Makefile`
 
