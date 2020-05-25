@@ -9,16 +9,17 @@ This is designed to be a simple and fairly minimal setup required to begin devel
 | Targets     | Action                                                                                    |
 | ------------| ----------------------------------------------------------------------------------------- |
 | nro         | Builds `<project name>.nro`.
-| nso       | Builds `<project name>.nso`. <sup>2</sup>
-| nsp         | Builds `<project name>.nsp`. <sup>2</sup>
+| nso       | Builds `<project name>.nso`. <sup>1</sup>
+| nsp         | Builds `<project name>.nsp`. <sup>1</sup>
 | elf         | Builds `<project name>.elf`.
-| nxlink         | Builds `<project name>.nro` and runs nxlink to send to hbmenu.<sup>1</sup>
+| nxlink         | Builds `<project name>.nro` and runs nxlink to send to hbmenu.<sup>2</sup>
 
 Simply select your build target and click the Gear/Build button and the target will run from the Makefile.
 
 **Notes:** 
-* <sup>1</sup> This requires setting up your switch's ip address in the `Makefile`
-* <sup>2</sup> This requires setting up the APP's json file which should be located in RESOURCES/config.json
+* <sup>1</sup> This requires setting up the APP's json file which should be located in RESOURCES/config.json
+* <sup>2</sup> This requires setting up your switch's ip address in the `Makefile`
+
 
 ## Setting up devkitPro
 * Follow the steps installing [devkitPro](https://devkitpro.org/wiki/Getting_Started)
