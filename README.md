@@ -1,4 +1,4 @@
-# 3ds-template
+# switch-template
 
 A starter template for various Switch homebrew applications. This template is geared specifically towards the Code::Blocks IDE.  This template can also be used without Code::Blocks just use the `Makefile` and directory structure provided.
 
