@@ -14,6 +14,8 @@ This is designed to be a simple and fairly minimal setup required to begin devel
 | elf         | Builds `<project name>.elf`.
 | nxlink         | Builds `<project name>.nro` and runs nxlink to send to hbmenu.<sup>1</sup>
 
+Simply select your build target and click the Gear/Build button and the target will run from the Makefile.
+
 **Notes:** 
 * <sup>1</sup> This requires setting up your switch's ip address in the `Makefile`
 * <sup>2</sup> This requires setting up the APP's json file which should be located in RESOURCES/config.json
@@ -29,8 +31,6 @@ This is designed to be a simple and fairly minimal setup required to begin devel
     1. Choose Settings > Environment and scroll down to the Environment Variables section.
         1. Add `DEVKITPRO` and point it to where devkitpro is installed
         2. Add `DEVKITARM` and point it to where devkitarm is.
-
-To compile in Code::Blocks simply select your target from the list and click the Gear icon to automatically invoke the `Makefile`
 
 ## Creating a new project
 1. Make a new Code::Blocks project via a user-template you just created above.  Or simply copy this directory.
