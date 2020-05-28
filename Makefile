@@ -195,10 +195,10 @@ ifeq ($(strip $(APP_JSON)),)
 
 ifeq ($(OS),Windows_NT)
 	NXLINK = nxlink.exe
-	YUZU = yuzu.exe
+	YUZU = yuzu-cmd.exe
 else
 	NXLINK = nxlink
-	YUZU = yuzu
+	YUZU = yuzu-cmd
 endif
 
 
