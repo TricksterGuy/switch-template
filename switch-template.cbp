@@ -67,6 +67,10 @@
 				<Option type="4" />
 				<Option compiler="gcc" />
 			</Target>
+			<Target title="yuzu">
+				<Option type="4" />
+				<Option compiler="gcc" />
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />

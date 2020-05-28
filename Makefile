@@ -171,6 +171,9 @@ nsp : bootstrap
 nxlink : bootstrap
 	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
 
+yuzu : bootstrap
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $@
+
 bootstrap : $(BUILD) $(OUTPUT_DIR)
 	@[ -d $(BUILD) ] || mkdir -p $(BUILD)
 	@[ -d $(OUTPUT_DIR) ] || mkdir -p $(OUTPUT_DIR)
@@ -192,8 +195,10 @@ ifeq ($(strip $(APP_JSON)),)
 
 ifeq ($(OS),Windows_NT)
 	NXLINK = nxlink.exe
+	YUZU = yuzu.exe
 else
 	NXLINK = nxlink
+	YUZU = yuzu
 endif
 
 
@@ -214,6 +219,9 @@ nso :
 nxlink : nro
 	@$(NXLINK) -a $(SWITCH_IP) $(OUTPUT_FILE).nro
 
+yuzu : nro
+	@$(YUZU) $(OUTPUT_FILE).nro
+
 else
 
 all	:	$(OUTPUT_FILE).nsp
@@ -228,6 +236,9 @@ nxlink :
 	@echo "$(RESOURCES)/config.json is present so not running nxlink."
 nsp : $(OUTPUT_FILE).nsp
 nso : $(OUTPUT_FILE).nso
+
+yuzu : nso
+	@$(YUZU) $(OUTPUT_FILE).nso
 
 endif
 
