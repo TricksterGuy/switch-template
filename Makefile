@@ -22,10 +22,10 @@ include $(DEVKITPRO)/libnx/switch_rules
 #
 # NO_ICON: if set to anything, do not use icon.
 # NO_NACP: if set to anything, no .nacp file is generated.
-# APP_TITLE is the name of the app stored in the .nacp file (Optional)
-# APP_AUTHOR is the author of the app stored in the .nacp file (Optional)
-# APP_VERSION is the version of the app stored in the .nacp file (Optional)
-# APP_TITLEID is the titleID of the app stored in the .nacp file (Optional)
+# APP_TITLE is the name of the app stored in the .nacp file. 511 characters max. (Optional)
+# APP_AUTHOR is the author of the app stored in the .nacp file. 255 characters max. (Optional)
+# APP_VERSION is the version of the app stored in the .nacp file. It should be at most 15 characters. (Optional)
+# APP_TITLEID is the titleID of the app stored in the .nacp file. It should be at most 16 hex characters. (Optional)
 # ICON is the filename of the icon (.jpg), relative to the project folder.
 #   If not set, it attempts to use one of the following (in this order):
 #     - resources/icon.jpg
